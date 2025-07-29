@@ -33,8 +33,22 @@ if uploaded_file:
     img = Image.open(uploaded_file)
     
     st.write("🖼️ Crop to remove background manually (like neckline area):")
-    cropped_img = st_cropper(img, aspect_ratio=None)
-    
+
+
+uploaded = st.file_uploader("Upload photo", type=["jpg", "jpeg", "png"])
+if uploaded:
+    img = Image.open(uploaded)
+    st.image(img, caption="Original Image")
+
+    st.write("Enter crop coordinates manually:")
+    left = st.number_input("Left", 0, img.width, value=0)
+    top = st.number_input("Top", 0, img.height, value=0)
+    right = st.number_input("Right", 0, img.width, value=img.width)
+    bottom = st.number_input("Bottom", 0, img.height, value=img.height)
+
+    if st.button("Crop"):
+        cropped = img.crop((left, top, right, bottom))
+        st.image(cropped, caption="Cropped Image")
     st.image(cropped_img, caption="🖼️ Cropped Output", use_column_width=True)
     
     # Save or use cropped image as needed
