@@ -1,3 +1,4 @@
+from streamlit_cropper import st_cropper
 import streamlit as st
 from PIL import Image
 
@@ -28,3 +29,13 @@ if uploaded_file and outfit_file:
     result.paste(outfit_img, position, outfit_img)
 
     st.image(result, caption="🖼️ Outfit Preview", use_container_width=True)
+if uploaded_file:
+    img = Image.open(uploaded_file)
+    
+    st.write("🖼️ Crop to remove background manually (like neckline area):")
+    cropped_img = st_cropper(img, aspect_ratio=None)
+    
+    st.image(cropped_img, caption="🖼️ Cropped Output", use_column_width=True)
+    
+    # Save or use cropped image as needed
+    
