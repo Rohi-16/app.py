@@ -46,7 +46,7 @@ return ( <div className="min-h-screen bg-gray-100 p-6"> <h1 className="text-3xl 
     </div>
 
     <Button onClick={handleScreenshot} className="mt-4">
-      📸 Take Screenshot
+       Take Screenshot
     </Button>
   </div>
 </div>
