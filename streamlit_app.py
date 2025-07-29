@@ -1,6 +1,6 @@
 import streamlit as st
 
-import React, { useRef, useState } from "react"; import html2canvas from "html2canvas"; import { Button } from "@/components/ui/button";
+
 
 export default function VirtualTryOn() { const [uploadedImage, setUploadedImage] = useState(null); const [selectedOutfit, setSelectedOutfit] = useState(null); const previewRef = useRef(null);
 
