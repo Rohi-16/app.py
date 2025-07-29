@@ -10,7 +10,7 @@ const handleScreenshot = async () => { if (previewRef.current) { const canvas = 
 
 const outfitOptions = [ { id: 1, name: "Casual T-Shirt", url: "/outfits/tshirt1.png" }, { id: 2, name: "Kurti", url: "/outfits/kurti1.png" }, { id: 3, name: "Formal Shirt", url: "/outfits/shirt1.png" }, ];
 
-return ( <div className="min-h-screen bg-gray-100 p-6"> <h1 className="text-3xl font-bold text-center mb-8">👗 Virtual Try-On Room</h1>
+return ( <div className="min-h-screen bg-gray-100 p-6"> <h1 className="text-3xl font-bold text-center mb-8"> Virtual Try-On Room</h1>
 
 <div className="flex flex-col items-center gap-6">
     <input type="file" accept="image/*" onChange={handleImageUpload} className="mb-4" />
