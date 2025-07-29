@@ -1,4 +1,4 @@
-from streamlit_cropper import st_cropper
+
 import streamlit as st
 from PIL import Image
 
