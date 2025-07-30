@@ -24,24 +24,4 @@ This app lets users:
 ✅ Outfit matching recommendations (planned/partial)  
 ✅ Works on mobile (designed mobile-first)
 
----
-
-## 🖼️ Screenshots
-
-![User upload sample](https://your-image-link.com/user-photo-sample.png)  
-*User uploads their full body photo*
-
-![Outfit overlay](https://your-image-link.com/tryon-overlay-demo.png)  
-*App overlays and aligns outfit on the user*
-
----
-
-## 🚀 How to Run the Project
-
-### Option 1: Streamlit (for Python)
-
-```bash
-git clone https://github.com/yourusername/virtual-tryon.git
-cd virtual-tryon
-pip install -r requirements.txt
-streamlit run app.py
+-
