@@ -1,4 +1,4 @@
-# 👗 Virtual Clothes Try-On Web App
+#  Virtual Clothes Try-On Web App
 
 Try clothes on virtually before buying or styling — just upload your photo and the outfit, and the app shows how it may look on you. 💡 You can optionally enter your measurements, height, skin tone, or body type for better recommendations.
 
